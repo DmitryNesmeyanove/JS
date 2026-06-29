@@ -7,5 +7,5 @@ const urlsDomain = {
 for(let keys in urlsDomain) {
     const lowerCaseKeys = keys.toLowerCase();
     const valueKey = urlsDomain[keys]
-console.log("ссылка на " + lowerCaseKeys + " - " + valueKey);
+console.log('ссылка на ${lowerCaseKeys} ${valueKey}');
 }
