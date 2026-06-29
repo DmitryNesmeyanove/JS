@@ -1,5 +1,8 @@
+const moment = require('moment');
+
 function convertData(str){
-    console.log(str.split('-').reverse().join('.'));
+    const date = moment(str, 'DD-MM-YYYY');
+    console.log(date.format('YYYY-MM-DD'));
 }
 
 convertData('21-1-2021');
